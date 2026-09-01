@@ -1,0 +1,14 @@
+# Environment Variables
+.env
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Vector Database (Optional, mostly ignored to avoid huge file sizes)
+data/vector_store/
