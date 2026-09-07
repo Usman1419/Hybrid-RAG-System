@@ -51,7 +51,11 @@ class HybridRerankRetriever(BaseRetriever):
         scored_candidates.sort(key=lambda x: x[1], reverse=True)
         
         # Return top K docs
-        return [doc for doc, score in scored_candidates[:self.top_k]]
+        result_docs = []
+        for doc, score in scored_candidates[:self.top_k]:
+            doc.metadata["rerank_score"] = float(score)
+            result_docs.append(doc)
+        return result_docs
 
 import string
 
