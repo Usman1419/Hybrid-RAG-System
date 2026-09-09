@@ -1,5 +1,7 @@
 
 # Advanced Hybrid RAG System
+This project is an **Advanced Hybrid Retrieval-Augmented Generation (RAG)** system designed to answer questions based on a custom knowledge base of PDF documents. Unlike traditional RAG systems that rely solely on semantic search, this system utilizes a Hybrid Search approach (Semantic + Keyword) combined with a Cross-Encoder Reranker to achieve state-of-the-art accuracy and completely eliminate AI hallucinations.
+
 ## 🧠 Core Technologies Used
 * **FAISS (Facebook AI Similarity Search):** A highly optimized local vector database used for blazing-fast semantic search.
 * **BM25 (Best Matching 25):** An advanced information retrieval algorithm used for exact keyword matching.
